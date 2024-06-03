@@ -21,6 +21,33 @@
       },
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "89a8",
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "4225",
+      "name": "Meu projeto 3",
+      "budget": "15000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "1b6e",
+      "name": "teste 2",
+      "budget": "150000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
