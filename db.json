@@ -1,13 +1,30 @@
 {
   "projects": [
     {
-      "id": "191f",
-      "name": "3333",
-      "budget": "4534545",
+      "id": "cf81",
+      "name": "Teste",
+      "budget": "5000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "3",
+        "name": "Design"
       },
+      "cost": 0,
+      "services": [
+        {
+          "name": "sdhsidrhfsd",
+          "cost": "454545",
+          "description": "hghghgh"
+        }
+      ]
+    },
+    {
+      "id": "71ff",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "budget": "656565",
+      "name": "fggrgr",
       "cost": 0,
       "services": []
     }

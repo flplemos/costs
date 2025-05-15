@@ -6,6 +6,8 @@ import Loading from "../../layout/Loading"
 import LinkButton from "../../layout/LinkButton"
 import ProjectCard from "./project/ProjectCard"
 import { useState, useEffect } from "react"
+import { API_BASE_URL } from "../../config"  // ajuste o caminho conforme sua estrutura
+
 
 function Projects() {
 
@@ -23,7 +25,7 @@ function Projects() {
     useEffect(() => {
         setTimeout(
             () => {
-                fetch('http://localhost:5000/projects', {
+                fetch(`${API_BASE_URL}/projects`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'

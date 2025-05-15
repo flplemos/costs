@@ -2,6 +2,7 @@ import styles from "./Project.module.css"
 
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
+import { API_BASE_URL } from "../../config"
 
 function Project() {
   const { id } = useParams()
@@ -10,7 +11,7 @@ function Project() {
   const [newService, setNewService] = useState({})
 
   useEffect(() => {
-    fetch(`http://localhost:5000/projects/${id}`, {
+    fetch(`${API_BASE_URL}/projects/${id}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',
@@ -38,7 +39,7 @@ function Project() {
   function handleSubmit(e) {
     e.preventDefault()
 
-    fetch(`http://localhost:5000/projects/${project.id}`, {
+    fetch(`${API_BASE_URL}/projects/${project.id}`, {
       method: "PUT",
       headers: {
         'Content-Type': 'application/json',
@@ -70,7 +71,7 @@ function Project() {
       services: updatedServices
     }
 
-    fetch(`http://localhost:5000/projects/${project.id}`, {
+    fetch(`${API_BASE_URL}/projects/${project.id}`, {
       method: "PUT",
       headers: {
         'Content-Type': 'application/json',
@@ -92,7 +93,7 @@ function Project() {
       services: updatedServices
     }
 
-    fetch(`http://localhost:5000/projects/${project.id}`, {
+    fetch(`${API_BASE_URL}/projects/${project.id}`, {
       method: "PUT",
       headers: {
         'Content-Type': 'application/json',
